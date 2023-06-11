@@ -1,0 +1,22 @@
+/* .carousel-slide {
+    overflow: hidden;
+}
+
+.carousel-slide-inner {
+    display: flex;
+    animation: slide-animation 1s forwards;
+}
+
+@keyframes slide-animation {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-300px);
+    }
+} */
+
+/* .carousel {
+    overflow-x: hidden;
+} */

@@ -1,0 +1,16 @@
+.carousel-children {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    transform: tra 0.5s ease;
+}
+
+.carousel-children.transition-enabled {
+    transform: transition 0.5s ease;
+}
+
+.carousel-child {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+}
