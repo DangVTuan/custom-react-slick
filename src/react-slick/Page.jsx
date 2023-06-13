@@ -46,14 +46,25 @@ function Page() {
   const carouselRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  function handleAddData() {
+    setData((prev) => [
+            ...prev,
+            { id: 1, title: 1 },
+            { id: 2, title: 2 },
+            { id: 3, title: 3 },
+            { id: 4, title: 4 },
+            { id: 5, title: 5 },
+          ])
+  }
+
   const handleNextSlide = () => {
     console.log("aaaaa", carouselRef.current);
     setCurrentIndex((prevIndex) => prevIndex + 1);
 
-    // const carouselSlide = carouselRef.current;
-    // const currentOffset = carouselSlide.getBoundingClientRect().left;
-    // const nextOffset = currentOffset - 300;
-    // carouselSlide.style.transform = `translateX(${nextOffset}px)`;
+    const maxCall = data.length - currentIndex
+    if(maxCall < 3) {
+      handleAddData()
+    } 
   };
 
   const handlePrevSlide = () => {
